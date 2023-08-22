@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - '4000:4000'
+    depends_on:
+      - mongo
+    environment:
+      DATABASE_URI: 'mongodb://admin:secret@mongo:27017/destinationdb?authSource=admin'
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: secret
+      MONGO_INITDB_DATABASE: destinationdb
+
+volumes:
+  mongo-data:

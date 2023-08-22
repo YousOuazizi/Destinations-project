@@ -1,0 +1,12 @@
+.destination-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destinationListHead {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }

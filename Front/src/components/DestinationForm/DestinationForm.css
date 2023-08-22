@@ -1,0 +1,10 @@
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inputField {
+  flex: 1 0 calc(25% - 16px);
+  margin: 8px;
+}

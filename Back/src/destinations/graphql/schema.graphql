@@ -1,0 +1,53 @@
+# Définition du type `Destination`. 
+type Destination {
+  id: ID!
+  name: String!
+  address: String!
+  image: String!
+  habitant: String!
+  hotel: String!
+  revenue: String!
+  superficie: String!
+  isBlocked: Boolean!
+}
+
+# Définition de l'input `EditDestinationInput` pour modifier une destination existante.
+input EditDestinationInput {
+  id: ID!
+  name: String
+  address: String
+  habitant: String
+  hotel: String
+  revenue: String
+  superficie: String
+  isBlocked: Boolean
+}
+
+type Query {
+  destinations: [Destination!]!
+}
+
+# Définition des mutations possibles.
+type Mutation {
+  createDestination(
+    name: String!
+    address: String!
+    image: String!
+    habitant: String!
+    hotel: String!
+    revenue: String!
+    superficie: String!
+  ): Destination!
+  editDestination(
+    id: String!
+    name: String!
+    address: String!
+    image: String!
+    habitant: String!
+    hotel: String!
+    revenue: String!
+    superficie: String!
+  ): Destination!
+  deleteDestination(id: String!): Boolean!
+  toggleBlockDestination(id: String!): Destination!
+}

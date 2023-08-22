@@ -1,0 +1,109 @@
+.destination-card {
+  position: relative;
+  height: 276px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+
+  .icon-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+  }
+}
+.destination-card .MuiCardContent-root {
+  padding: 0;
+}
+
+.destination-image {
+  width: 100%;
+  height: 146px;
+}
+
+.add-button {
+  margin-bottom: 20px;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* width: 63px;
+    height: 35px; */
+  border-radius: 5px 5px 0px 5px;
+  /* gap: 16px;
+    padding: 10px; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #ffff;
+}
+.destination-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.destination-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.destination-name {
+  margin: 0;
+}
+
+.destination-address {
+  margin: 0;
+}
+
+.card-icon {
+  margin: 4px;
+}
+.card-icon[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.edit-icon {
+  color: #6f6f6f;
+}
+
+.delete-icon {
+  color: #e70033;
+}
+.extra-details div {
+  display: inline-block;
+  align-items: center;
+  margin: 8px 10px;
+  width: 100%;
+}
+
+.extra-value,
+.extra-label {
+  display: inline-block;
+  width: 100%;
+}
+.extra-details {
+  display: flex;
+  justify-content: center;
+}
+
+.extra-value {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.extra-label {
+  font-size: 0.9em;
+  text-align: center;
+}
